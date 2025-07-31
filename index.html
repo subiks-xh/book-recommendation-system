@@ -1,4 +1,21 @@
-<!-- index.html -->
-<h2>Book Recommendation System</h2>
-<input type="text" placeholder="Enter book or genre" />
-<button>Get Recommendation</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Recommendation System</title>
+  </head>
+  <body>
+    <h2>Book Recommendation System</h2>
+
+    <input
+      type="text"
+      id="genreInput"
+      placeholder="Enter genre (e.g., fiction, science)"
+    />
+    <button onclick="recommendBooks()">Get Recommendation</button>
+
+    <h3>Recommended Books:</h3>
+    <ul id="output"></ul>
+
+    <script src="recommend.js"></script>
+  </body>
+</html>
